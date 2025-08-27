@@ -205,3 +205,31 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# --- data & large/private files (do not commit) ---
+data/
+*/Tables/
+/mnt/
+/mnt/fsx/
+/mnt/efs/
+*.dcm
+*.npy
+*.npz
+*.pt
+*.pth
+*.h5
+*.ckpt
+*.zip
+*.tar
+*.tar.gz
+*.7z
+
+# notebook artifacts
+.ipynb_checkpoints/
+*.html
+*.png
+
+# IDE
+.vscode/
+.idea/
+

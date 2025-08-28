@@ -45,16 +45,6 @@ We analyzed embeddings from the **Emory CXR dataset** using five state-of-the-ar
 
 ---
 
-## 📂 Repository Structure
-thoracic-rangers-cxr/
-│── GROUP5_FINALNOTEBOOK.ipynb # Jupyter notebook with analysis & clustering
-│── Team5_Datathon_Presentation.pptx # Project presentation
-│── README.md # Project documentation
-│── requirements.txt # Dependencies for reproducibility
-
-
----
-
 ## 👩‍💻 Contributors
 - Mercy Nyanchama Nyambane
 - Opeyami Adeniran

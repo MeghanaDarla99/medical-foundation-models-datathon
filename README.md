@@ -1,19 +1,73 @@
-# medical-foundation-models-datathon
-# EmoryCXR-first: EDA & Embedding Comparisons (with supporting MIMIC-CXR)
+# Thoracic Rangers – Emory CXR Embedding Atlas - Foundation Models - Datathon
 
-This repo centers on **EmoryCXR**: we perform EDA, build **study-level (frontal-first) cohorts**, define a **binary Pleural Effusion** endpoint (drop −1 uncertain), and compare **foundation-model embeddings** (RAD-DINO, BioMedCLIP, CheXagent, MedGemma, MedImageInsight).  
-We also include **supporting EDA on MIMIC-CXR** for cross-dataset sanity checks.
+An interactive visualization tool for **guiding subgroup analysis** of chest X-ray embeddings.  
+Built during the **Emory Datathon 2025** to compare how different foundation models interpret CXR embeddings and identify outlier patterns.
 
-## 🔎 What’s inside
-- **EmoryCXR EDA**: view mix (AP/PA/Lateral), images per study & per year, label prevalence, and class balance
-- **Cohort building**: one image per study (frontal-first), **patient-level splits** to avoid leakage
-- **Primary endpoint**: **Pleural Effusion** (binary 0/1; uncertain −1 dropped) + split-wise counts
-- **Embedding comparisons**: UMAP (cosine) plots across multiple models (Emory embeddings)
-- **MIMIC-CXR (supporting)**: mirrored EDA and label landscape to contextualize Emory findings
+---
 
-## 🚀 Quickstart
-```bash
-# optional virtual env
-python -m venv .venv && source .venv/bin/activate   # Windows: .venv\Scripts\activate
-pip install -r requirements.txt
-# open the notebooks and run
+## 🚀 Project Overview
+We analyzed embeddings from the **Emory CXR dataset** using five state-of-the-art foundation models and developed a tool to visualize clustering patterns interactively.
+
+### **Objective**
+- Compare embeddings across models to understand representation differences.
+- Identify **outlier clusters** and subgroup patterns.
+- Enable **real-time exploration** using an interactive embedding atlas.
+
+---
+
+## 🧠 Models Used
+- **RaD-DINO**
+- **MedGemma**
+- **CheXagent**
+- **MedImageInsight**
+- **BiomedCLIP**
+
+---
+
+## 🛠️ Tech Stack
+| **Component** | **Tools/Methods** |
+|--------------|--------------------|
+| Dataset | Emory CXR |
+| Visualization | UMAP + Cosine Similarity |
+| Interactive Tool | Embedding Atlas |
+| Language | Python (Jupyter Notebook) |
+| Analysis | EDA, clustering, dimensionality reduction |
+
+---
+
+## 📊 Process Workflow
+1. Exploratory Data Analysis (EDA) on CXR metadata & labels.
+2. Selected **100K samples** per embedding model.
+3. Performed **dimensionality reduction** using UMAP.
+4. Generated **2D embedding visualizations**.
+5. Built an **interactive real-time clustering tool**.
+6. Sampled representative images from each cluster for insights.
+
+---
+
+## 📂 Repository Structure
+
+
+
+---
+
+## 👩‍💻 Contributors
+- Mercy Nyanchama Nyambane
+- Opeyami Adeniran
+- Sri Jahnavi Adusumilli
+- Meghana Darla
+- Christopher Boon
+- Jahanzaib Malik
+- Chiratidzo
+---
+
+## 🔮 Future Work
+- Compare cluster integrity under label misclassification.
+- Cross-compare embeddings from different CXR datasets.
+- Evaluate classification performance on single outcomes (e.g., pneumonia).
+
+---
+
+## 📄 License
+MIT License. See `LICENSE` for details.
+
